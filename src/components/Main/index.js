@@ -1,6 +1,7 @@
 import styles from "./Main.module.scss";
 import Image from "next/image";
 import Box from "../Box";
+import Text from "../Text";
 const Main = (props) => {
   const { title, description, components } = props;
   const hasComponents = Array.isArray(components) && components?.length > 0;
@@ -23,7 +24,13 @@ const Main = (props) => {
                     />
                   );
                 case "text":
-                  return <p key={idx}>{component.text}</p>;
+                  return (
+                    <Text
+                      key={idx}
+                      size={component.size}
+                      text={component.text}
+                    />
+                  );
                 case "box":
                   return (
                     <Box
