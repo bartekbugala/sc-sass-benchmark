@@ -1,3 +1,14 @@
+@import "./variables.scss";
+
+:root {
+  --t-xxs: #{$t-xxs};
+  --t-xs: #{$t-xs};
+  --t-sm: #{$t-sm};
+  --t-md: #{$t-md};
+  --t-lg: #{$t-lg};
+  --t-xl: #{$t-xl};
+  --t-xxl: #{$t-xxl};
+}
 html,
 body {
   padding: 0;
@@ -20,7 +31,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
+    color: rgb(233, 233, 233);
     background: black;
   }
 }

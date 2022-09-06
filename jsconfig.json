@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@context/*": ["src/context/*"],
+      "@styles/*": ["src/styles/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@helpers/*": ["src/helpers/*"]
+    }
+  },
+  "typeAcquisition": {
+    "exclude": ["dotenv"]
+  },
+  "exclude": ["node_modules", ".next"]
+}
