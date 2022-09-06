@@ -17,9 +17,9 @@ const Main = (props) => {
                     <Image
                       key={idx}
                       src={component.src}
+                      alt={component.name}
                       width="600"
                       height="400"
-                      alt={component.name}
                     />
                   );
                 case "text":
@@ -28,9 +28,9 @@ const Main = (props) => {
                   return (
                     <Box
                       key={idx}
+                      color={component.color}
                       width={component.width}
                       height={component.height}
-                      color={component.color}
                     />
                   );
                 default:
