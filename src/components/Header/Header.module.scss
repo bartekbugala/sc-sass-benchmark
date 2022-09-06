@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+}
+.nav {
+  background-color: $info;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100px;
+  & a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    flex: 1 1 50px;
+    font-size: $t-lg;
+    &:hover {
+      background-color: $info-01;
+    }
+  }
+  & a.active {
+    background-color: $info-10;
+  }
+  @media (min-width: $lg) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100px;
+    & a {
+    }
+  }
+}

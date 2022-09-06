@@ -1,0 +1,14 @@
+.main {
+ padding: $d-8;
+ display: flex;
+ background-color: $secondary;
+ color: $primary;
+ flex-wrap: wrap;
+ width: 100%;
+ h1,h2,h3,h4,h5,h6 {
+    flex-basis: 100%;
+ }
+ p {
+    flex-basis: 100%;
+ }
+}
