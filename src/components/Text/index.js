@@ -1,9 +1,9 @@
-import styles from "./Text.module.scss";
+import TextStyled from './Text.sc'
 
 const Text = (props) => {
   const { text, size } = props;
   return (
-    <p className={styles.text} style={{ fontSize: `var(--t-${size})` }}>{text}</p>
+    <TextStyled fontSize={size}>{text}</TextStyled>
   );
 };
 

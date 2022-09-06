@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, breakpoints } from "@styles/variables";
+import { colors, breakpoints, fonts } from "@styles/variables";
 
 export const Header = styled.header`
   width: 100%;

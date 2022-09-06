@@ -1,7 +1,7 @@
-import styles from "./Layout.module.scss";
+import LayoutStyled from "./Layout.sc";
 import Link from "next/link";
 const Layout = ({ children }) => {
-  return <div className={styles.layout}>{children}</div>;
+  return <LayoutStyled>{children}</LayoutStyled>;
 };
 
 export default Layout;
