@@ -4,6 +4,7 @@ import testProps from "../data/testProps";
 const pageProps = {
   main: {
     title: "Kontakt",
+    description: "Scroll shift jest wynikiem irytującego UX przeglądarki."
   },
 };
 

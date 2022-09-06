@@ -1,12 +1,12 @@
-import styles from "./Box.module.scss";
+import BoxStyled from "./Box.sc";
 
 const Box = (props) => {
-  const { width, height, color } = props;
+  const { width, height, color, children } = props;
+  console.log(props);
   return (
-    <div
-      className={styles.box}
-      style={{ width: width + 'px', height: height + 'px', background: color }}
-    ></div>
+    <BoxStyled width={width} height={height} color={color}>
+      {children}
+    </BoxStyled>
   );
 };
 

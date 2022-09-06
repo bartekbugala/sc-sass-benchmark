@@ -38,7 +38,47 @@ const Main = (props) => {
                       color={component.color}
                       width={component.width}
                       height={component.height}
-                    />
+                    >
+                      {
+                        hasComponents
+                        ? components.map((component, idx) => {
+                            switch (component.type) {
+                              case "image":
+                                return (
+                                  <Image
+                                    key={idx}
+                                    src={component.src}
+                                    alt={component.name}
+                                    width="600"
+                                    height="400"
+                                  />
+                                );
+                              case "text":
+                                return (
+                                  <Text
+                                    key={idx}
+                                    size={component.size}
+                                    text={component.text}
+                                  />
+                                );
+                              case "box":
+                                return (
+                                  <Box
+                                    key={idx}
+                                    color={component.color}
+                                    width={component.width}
+                                    height={component.height}
+                                  >
+                                    {}
+                                  </Box>
+                                );
+                              default:
+                                return null;
+                            }
+                          })
+                        : null
+                      }
+                    </Box>
                   );
                 default:
                   return null;
