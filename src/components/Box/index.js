@@ -1,12 +1,14 @@
 import styles from "./Box.module.scss";
 
 const Box = (props) => {
-  const { width, height, color } = props;
+  const { width, height, color, children } = props;
   return (
     <div
       className={styles.box}
-      style={{ width: width + 'px', height: height + 'px', background: color }}
-    ></div>
+      style={{ maxWidth: width + 'px', minHeight: height + 'px', background: color }}
+    >
+      {children}
+    </div>
   );
 };
 

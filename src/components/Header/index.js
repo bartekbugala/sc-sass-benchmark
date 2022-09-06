@@ -9,7 +9,7 @@ const Header = (props) => {
       <nav className={styles.nav}>
         <Link href="https://nextjs.org/">
           <a>
-            <Image alt="Vercel logo" src="/vercel.svg" width="100" height="100" fill />
+            <Image alt="Vercel logo" src="/vercel.svg" width="100" height="100" />
           </a>
         </Link>
         {hasItems
